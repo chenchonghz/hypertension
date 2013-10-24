@@ -1,0 +1,22 @@
+data  = [3,7,9,1,4,6,8,2,5]
+ 2   w     = 700
+ 3   h     = 300
+ 4   max   = d3.max(data)
+ 5   
+ 6   # Scales
+ 7   x  = d3.scale.linear().domain([0, data.length - 1]).range [0, w]
+ 8   y  = d3.scale.linear().domain([0, max]).range [h, 0]
+ 9   
+10   # Base vis layer
+11   vis = d3.select('#chart')
+12     .append('svg:svg')
+13       .attr('width', w)
+14       .attr('height', h)
+15 
+16   # Add path layer
+17   vis.selectAll('path.line')
+18     .data([data])
+19   .enter().append("svg:path")
+20     .attr("d", d3.svg.line()
+21       .x((d,i) -> x(i))
+22       .y(y))

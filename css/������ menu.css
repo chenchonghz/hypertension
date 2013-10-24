@@ -1,0 +1,211 @@
+@CHARSET "gb2312";
+*{margin:0;padding:0;}/* 去掉*/
+body {
+	font-family:Verdana;
+	font-size:14px;
+	margin:auto;
+	width: 1024px;
+	background-color: #FFFFFF;
+}
+#header { position:absolute; left:auto; top:0px; height:100px; width:1000px; margin-bottom:0px; background-image: url(../images/logo.jpg); right: auto; 
+}
+/* common styling */
+/* set up the overall width of the menu div, the font and the margins */
+.menu { position:absolute; left:auto; top:100px; font:"宋体" 12px; width:1000px; height:30px; margin-bottom:0px; text-align:center; right: auto; background: #0000FF; }
+#zhongjian #denglu { float: none; position: absolute; top: 10px; right: 0px; }
+
+/* remove the bullets and set the margin and padding to zero for the unordered list */
+.menu ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+}
+/* float the list so that the items are in a line and their position relative so that the drop down list will appear in the right place underneath each list item */
+.menu ul li {
+float:left; 
+position:relative;
+}
+/* style the links to be 104px wide by 30px high with a top and right border 1px solid white. Set the background color and the font size. */
+.menu ul li a, .menu ul li a:visited {
+
+display:block; 
+text-align:center; 
+text-decoration:none; 
+width:104px; 
+height:30px; 
+color:#fff; 
+border:1px solid #fff;
+border-width:1px 1px 0 0;
+background:#0055A6; 
+line-height:30px; 
+font-size:13px;
+letter-spacing:1px;
+}
+/* make the dropdown ul invisible */
+.menu ul li ul {
+display: none;
+}
+/* specific to non IE browsers */
+/* set the background and foreground color of the main menu li on hover */
+.menu ul li:hover a {
+color:#fff; 
+background:#0288dc;
+}
+/* make the sub menu ul visible and position it beneath the main menu list item */
+.menu ul li:hover ul {
+display:block; 
+position:absolute; 
+top:31px; 
+left:0; 
+width:105px;
+}
+/* style the background and foreground color of the submenu links */
+.menu ul li:hover ul li a {
+display:block; 
+background:#0288dc; 
+height:20px;
+line-height:20px;
+color:#fff;
+font-size:13px;
+}
+/* style the background and forground colors of the links on hover */
+.menu ul li:hover ul li a:hover {
+color:#000;
+}
+/* 以上为menu部分的样式和布局*/
+
+#hr { background-color: #66CC00; position: absolute; height: 5px; width: 1000px; left: auto; top: 130px; right: auto; }
+#zhuanye { background-image: url(../images/zhuanye.gif); height: 30px; width: 250px; position: absolute; left: auto; top: 424px; right: auto; }
+#footer {
+	position: absolute;
+	height: 60px;
+	width: 1000px;
+	left: auto;
+	top: 1005px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	background-color: #FFFFFF;
+	text-align: center;
+	right: auto;
+	bottom: auto;
+	float: left;
+}
+
+#shuxian {
+	position: relative;
+	left: 0px;
+	top: 25px;
+	height: 200px;
+	width: 2px;
+	right: auto;
+	float: left;
+	background-color: #999999;
+	background-image: none;
+	bottom: 25px;
+}
+#login { height: 290px; width: 265px; position: relative; left: 0px; top: 135px; right: auto; float: right; background: #FFFFFF; margin: 0px; padding: 0px; }
+#right {
+	height: 250px;
+	width: 265px;
+	position: relative;
+	left: 10px;
+	top: 0px;
+	background: #FFFFFF;
+	float: right;
+}
+
+#youshi {
+	width: 350px;
+	position: relative;
+	left: auto;
+	height: 250px;
+	top: 0px;
+	background: #FFFFFF;
+	right: auto;
+	float: left;
+}
+#zhongxia {
+	height: 500px;
+	width: 1000px;
+	position: absolute;
+	left: auto;
+	top: 487px;
+	right: auto;
+	background-color: #FFFFFF;
+}
+
+#youshi3 {
+	height: 250px;
+	width: 737px;
+	left: auto;
+	top: 0px;
+	position: relative;
+	background-color: #FFFFFF;
+	background-image: none;
+	float: left;
+}
+#right #faq {
+	float: none;
+	margin: auto;
+}
+
+
+#youshi2 {
+	width: 350px;
+	position: relative;
+	left: 20px;
+	height: 250px;
+	top: 0px;
+	background: #FFFFFF;
+	float: left;
+}
+#youshi .xiaoke #newtitle { text-decoration: none; }
+#youshi .xiaoke #newtitle li { list-style: url(../images/arrow.gif) none; }
+#youshi4 { width: 360px; position: absolute; left: 700px; height: 250px; top: 750px; background: #FFFFFF; 
+}
+#footbar { height: 8px; width: 1000px; position: absolute; top: 1065px; left: auto; background-color: #6699FF; right: auto; 
+}
+#end {
+	background-image: url(../images/wellcare_022.gif);
+	position: absolute;
+	height: 3px;
+	width: 1000px;
+	left: auto;
+	top: 1001px;
+	right: auto;
+	float: left;
+}
+
+.head_search_kuang { background:transparent url(http://img3.dangdang.com/booksaleimg/search_kuang.gif) repeat scroll 0 0; border:0 none; float:left; font:normal 12px Arial; height:19px; margin-left:0px; margin-top:0px; padding-left:28px; padding-top:5px; width:150px; }
+.tijiao { height: 19px; width: 50px; }
+
+#login #sousuo form {
+	height: 30px;
+	width: 265px;
+	border-style: none;
+	border-width: 0px;
+}
+#login #sousuo {
+	position: relative;
+	top: 10px;
+}
+#youshi2 ul {
+	position: relative;
+	left: 20px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	list-style-image: url(../images/arrow.gif);
+	list-style-type: none;
+}
+#right #yun {
+	position: relative;
+	height: 250px;
+	width: 260px;
+	top: auto;
+	margin: 0px;
+	background-color: #FFFFFF;
+}
+
+#zhongjian { left: auto; right: auto; position: absolute; height: 289px; width: 1000px; top: 0px; }

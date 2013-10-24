@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Test</title>
+        <script type="text/javascript" src="d3.v3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Your beautiful D3 code will go here
+		d3.select("body").append("p").text("New paragraph!");
+			d3.select("body").style("color", "red");
+    //.append("p")
+    //.text("New paragraph!");
+	d3.select("body").selectAll("p")
+    .data([4, 8, 15, 16, 23, 42])
+  .enter().append("p")
+    .text(function(d) { return "I’m number " + d + "!"; });
+	d3.select("body").transition()
+    .style("background-color", "black");
+    var dataset = [ 5, 10, 15, 20, 25 ];
+    d3.select("body").selectAll("p")
+    .data(dataset)
+    .enter()
+    .append("p")
+    //.text("New paragraph!");
+     //.text(function(d) { return d; });
+	 .text(function(d) {
+    return "I can count up to " + d;
+	
+});
+
+
+        </script>
+    </body>
+</html>   

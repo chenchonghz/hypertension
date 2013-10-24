@@ -1,0 +1,29 @@
+<html>
+<style type="text/css">
+<!--
+#form1 {
+	float: left;
+	background-color: #99FFFF;
+}
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<body>
+<h1 align="center">新闻添加系统</h1>
+<div id="form1">
+  <form action="insertnews.php" method="post">
+    title: <input type="text" name="title" /><br>
+<br>
+<br>
+
+    content:<textarea name="content" cols="30" rows="20"></textarea>
+  <input type="submit" value="提交！" />
+  </form>
+</div>
+<div id="form2">
+  <form action="list.php" method="post">
+    <input type="submit" value="列出所有的新闻"/>
+  </form>
+</div>
+</body>
+</html>

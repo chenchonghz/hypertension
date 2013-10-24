@@ -1,0 +1,7 @@
+rm(list=ls())
+require(RMySQL)
+con<-dbConnect(MySQL(), user="root",password="newpassword",dbname="test",host="127.0.0.1")
+control<-dbGetQuery(con,"select sbp  from guixiaoke")
+pdf("./r_tmp/9.pdf",width=8,height=6)
+plot(control)
+dev.off()

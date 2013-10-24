@@ -1,0 +1,28 @@
+
+Call:
+lm(formula = sbp ~ gene + age + sex + bmi + salt + oil + tobacco +  alcohol + loneliness + pressure, data = control)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2251 -1.4783 -0.0149  1.5182  5.4040 
+
+Coefficients:
+             Estimate Std. Error  t value Pr(>|t|)    
+(Intercept) 64.787602   0.318306  203.539  < 2e-16 ***
+gene         6.158503   0.046457  132.562  < 2e-16 ***
+age          1.141296   0.006022  189.507  < 2e-16 ***
+sex         -6.660638   0.049522 -134.499  < 2e-16 ***
+bmi          0.363514   0.008341   43.584  < 2e-16 ***
+salt         1.991301   0.057522   34.618  < 2e-16 ***
+oil          0.972242   0.069820   13.925  < 2e-16 ***
+tobacco      2.101215   0.054477   38.571  < 2e-16 ***
+alcohol      3.172304   0.064981   48.819  < 2e-16 ***
+loneliness   0.403676   0.121989    3.309 0.000941 ***
+pressure     1.969144   0.073975   26.619  < 2e-16 ***
+---
+Signif. codes: 0 *** 0.001 ** 0.01 * 0.05 . 0.1  1 
+
+Residual standard error: 2.045 on 6849 degrees of freedom
+Multiple R-squared:  0.96,	Adjusted R-squared: 0.9599 
+F-statistic: 1.642e+04 on 10 and 6849 DF,  p-value: < 2.2e-16 
+

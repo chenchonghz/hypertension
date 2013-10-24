@@ -1,0 +1,21 @@
+#div1 { position:relative; width:250px; height:250px; background: #FFFFFF; }
+body { height: 250px; width: 265px; margin: 0px; padding: 0px; position: absolute; left: 50px; background: #FFFFFF; }
+
+#div1 a {
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-family: Microsoft YaHei;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	padding: 3px 6px;
+	background-color: #999999;
+}
+#div1 a:hover {border: 1px solid #eee; background: #000; }
+#div1 .blue {color:blue;}
+#div1 .red {color:red;}
+#div1 .yellow {color:yellow;}
+p a { font-size: xx-small; color: #ba0c0c; background: #000000; }
+p a:hover { color: red; }
+p a:hover {color:red; }
